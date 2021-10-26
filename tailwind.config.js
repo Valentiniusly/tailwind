@@ -10,7 +10,7 @@ module.exports = {
         sans: ['Lato', 'sans'],
       },
       gridTemplateColumns: {
-        autoFill: 'repeat(auto-fill, minmax(300px, 1fr))',
+        autoFill: 'repeat(auto-fill, minmax(320px, 1fr))',
       },
     },
   },
