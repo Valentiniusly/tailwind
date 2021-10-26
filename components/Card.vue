@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col justify-between p-5 border h-72">
+  <article class="flex flex-col justify-between p-5 border h-72 shadow-lg rounded-lg">
     <div>
       <h3 class="text-main text-3xl leading-normal font-bold">05 Aug</h3>
         <p class="text-gray-700 mb-3">11:00-14:00</p>

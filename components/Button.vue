@@ -15,9 +15,9 @@ export default {
   data() {
     return {
       classes: [
-        'rounded-md', 'text-serif', 'transition-all',
+        'rounded-md', 'text-serif', 'transition-all', 'font-bold',
         this.main
-          ? ['bg-main', 'text-white', 'py-3', 'px-10']
+          ? ['bg-main', 'hover:bg-red-600', 'text-white', 'py-3', 'px-10']
           : ['text-sm', 'text-main', 'border', 'border-main', 'py-2', 'w-full', 'hover:bg-main', 'hover:text-white']
       ]
     }
