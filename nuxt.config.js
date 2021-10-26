@@ -35,7 +35,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/google-fonts', 'nuxt-buefy'],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
@@ -45,7 +45,7 @@ export default {
 
   googleFonts: {
     families: {
-      Lato: [300, 500, 700],
+      Lato: [300, 400, 700],
     },
   },
 };

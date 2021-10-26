@@ -1,15 +1,29 @@
 <template>
-  <nav class="flex justify-between items-center py-4 mb-8">
-    <div class="flex justify-between w-1/2">
-      <Logo />
+  <div class="flex justify-between items-center py-4 mb-8">
+    <div class="flex justify-start lg:justify-between items-center  w-1/2">
+      <Logo class="mr-4" />
 
-      <ul class="flex justify-between font-bold w-2/3">
-        <li class="cursor-pointer hover:text-main transition-all">About Us</li>
-        <li class="cursor-pointer hover:text-main transition-all">Courses</li>
-        <li class="cursor-pointer hover:text-main transition-all">Events</li>
-        <li class="cursor-pointer hover:text-main transition-all">Blog</li>
-        <li class="cursor-pointer hover:text-main transition-all">Contacts</li>
-      </ul>
+      <nav class="w-2/3 hidden lg:block">
+        <ul class="flex justify-between font-bold">
+          <li class="cursor-pointer hover:text-main transition-all">About Us</li>
+          <li class="cursor-pointer hover:text-main transition-all">Courses</li>
+          <li class="cursor-pointer hover:text-main transition-all">Events</li>
+          <li class="cursor-pointer hover:text-main transition-all">Blog</li>
+          <li class="cursor-pointer hover:text-main transition-all">Contacts</li>
+        </ul>
+      </nav>
+
+      <b-dropdown class="lg:hidden" aria-role="list">
+        <template #trigger="{ active }">
+          <b-button label="Nav" :icon-right="active ? 'menu-up': 'menu-down'" />
+        </template>
+
+        <b-dropdown-item aria-role="listitem">About us</b-dropdown-item>
+        <b-dropdown-item aria-role="listitem">Courses</b-dropdown-item>
+        <b-dropdown-item aria-role="listitem">Events</b-dropdown-item>
+        <b-dropdown-item aria-role="listitem">Blog</b-dropdown-item>
+        <b-dropdown-item aria-role="listitem">Contacts</b-dropdown-item>
+      </b-dropdown>
     </div>
 
     <div class="flex items-center">
@@ -21,11 +35,13 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.08679 11.7087C3.50902 11.7087 3.05743 11.99 2.87412 12.3942C2.62041 12.9536 2.39065 13.6196 2.33644 14.2513C2.3122 14.5337 2.42994 14.7418 2.59218 14.8426C3.44981 15.3753 5.43707 16.292 9.00007 16.292C12.5631 16.292 14.5503 15.3753 15.408 14.8426C15.5702 14.7418 15.6879 14.5337 15.6637 14.2513C15.6095 13.6196 15.3797 12.9536 15.126 12.3942C14.9427 11.99 14.4911 11.7087 13.9134 11.7087H4.08679ZM1.35626 11.7058C1.86288 10.5887 2.99416 10.042 4.08679 10.042H13.9134C15.006 10.042 16.1373 10.5887 16.6439 11.7058C16.9349 12.3474 17.2471 13.2099 17.3243 14.1088C17.3945 14.9273 17.0543 15.7819 16.2874 16.2583C15.1595 16.959 12.8664 17.9587 9.00007 17.9587C5.13374 17.9587 2.84066 16.959 1.71271 16.2583C0.945825 15.7819 0.605625 14.9273 0.675878 14.1088C0.753027 13.2099 1.06527 12.3474 1.35626 11.7058Z" fill="#424551"/>
         </svg>
 
-        <a class="cursor-pointer hover:text-main" href="#">Log in</a>/<a class="cursor-pointer hover:text-main" href="#">Register</a>
+        <a class="cursor-pointer hover:text-main" href="#">Log&nbsp;in</a>
+        /
+        <a class="cursor-pointer hover:text-main" href="#">Register</a>
       </div>
     </div>
 
-  </nav>
+  </div>
 </template>
 
 <script>

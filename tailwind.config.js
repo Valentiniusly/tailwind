@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         sans: ['Lato', 'sans'],
       },
+      gridTemplateColumns: {
+        autoFill: 'repeat(auto-fill, minmax(300px, 1fr))',
+      },
     },
   },
   variants: {
